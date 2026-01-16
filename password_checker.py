@@ -1,4 +1,6 @@
-password=input("Enter the password:")
+import getpass
+
+password=getpass.getpass("Enter the password:")
 score=0
 #checks the length of the password
 
