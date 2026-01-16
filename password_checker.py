@@ -1,8 +1,19 @@
-password = input("Enter your password: ")
-
-if len(password) < 8:
-    print("Password strength: Weak")
+password=input("Enter the password")
+score=0
+if len(password) <= 8:  #checks the length of the password
+    print("password should be greater than equal to 8 charectors")
 else:
-    print("Password length is good")
+    score+=1
+#uppercase check    
+has_upper=False
+for char in password :
+    if char.isupper():
+        has_upper=True
+        break
 
-#Add basic password length check
+if has_upper:
+    score+=1
+else:
+    print("Add at least one uppercase letter")
+print(f"password score:{score}")
+
