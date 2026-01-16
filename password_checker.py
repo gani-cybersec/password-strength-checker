@@ -42,5 +42,15 @@ if has_special:
 else:
     print("Add at least one special character(!@#$%^&*)")    
 print(f"password score:{score}")
+print(f"password score:{score}")
+
+print(f"Final Password Strength:")
+if score <= 1:
+    print("Weak 🔴")
+elif score <= 3:
+    print("Medium 🟡")
+else:
+    print("Strong 🟢")
+
 
 
